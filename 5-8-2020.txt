@@ -1,0 +1,271 @@
+1.Activitys-
+single screen of ui,
+each and every screen activity
+it is a combination of 
+xml file+java file
+
+ex:Caluclator....
+
+2.services
+
+a service is a long running back ground task
+
+ex:media player
+
+3.Broadcast Recivers:
+
+a broad cast reciver is an application component
+
+which to visible the system announcements
+
+ex:15% please 
+
+4.Content Provider:
+
+fetch the data between two applications
+
+ex:contacts     whatsup
+
+gopal ----reflect-gopal
+
+
+package name-content resolver class to get the data.
+
+
+To Day Objectives:
+------------------
+1.Views And View Groups
+
+2.View Properties And View Group Properties
+
+3.View Hirarchy
+
+4.Layouts in Android
+
+5.Application Structure
+
+6.Onclick Event Handling
+
+7.Hello Toast Application
+
+1.Views In Android
+-------------------
+a view is basic building block of android ui.
+
+a view is a small rectangualr box which give the user
+inputs.
+
+with the help of android.view.View package
+
+views are visible.
+
+example:Textview,EditText,RadioButton,Check Box,
+
+listview,spinner,seekbar,toogle button,switch,
+progress bar,-------------
+
+View Properties:
+----------------
+syantax:<Property name>:="Propertyvalue";
+
+layout_width="match_parent/wrap_content/200dp"
+
+layout_height="match_parent/wrap_content/200dp"
+
+textsize,textcolor,gravity,textstyle,layout_margin
+
+ViewGroups:
+----------
+View Group is base class of a view that holds view.
+
+View Groups are not visible.
+
+the main theme of view group to visible the layouts.
+
+properties of ViewGroups:
+-----------------------
+1.layout_width="match_parent,wrar_content,300dp"
+2.layout_height="match_parent,wrar_content,300dp"
+3.orientation="vertical/horizontal"
+
+Layouts or ViewGroups:
+----------------------
+1.LinearLayout
+2.ConstarintLayout-with connect to view Bounds
+3.GridLayout
+4.Relative Layout
+5.TableLayout
+6.StraggedgridLayout----
+
+Structure of Layout(View/ViewGroup)
+-----------------------------------
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+>
+
+<Button
+android:text="gopal"
+android:textsize="20sp"
+android:layout_width="m/w/200dp"
+android:layout_height="m/w/200dp"
+>
+</Button>
+
+<Button
+android:id="@+id/toast"
+android:text="gopal"
+android:textsize="20sp"-content
+android:layout_width="match_parent/wrap_content/200dp"
+android:layout_height="m/w/200dp"
+/>
+
+</LinearLayout>
+
+Structure of the application:
+-----------------------------
+<Mainfest>
+
+<permissions>
+
+<application
+name
+icon>
+
+<activity>
+
+<IntentFilter>
+
+<Java file>
+<xml file>
+
+</IntentFilter>
+
+</activity>
+
+</application>
+
+
+</Mainfest>
+
+Android Onclick Event Handling:
+-------------------------------
+we can handling the particular view or view group
+
+perfoming the onclick events two types.
+
+1.by using xml file
+2.by using java file
+
+1.by using xml file:
+--------------------
+syntax:<Propertyname>="properyvalue"
+
+example:onclick="toastmsg"---alt+enter
+
+exxample
+--------
+public void toastmsg(View view)
+{
+//write the msg
+}
+
+2.by using java file:
+---------------------
+steps:
+-----
+<Button
+android:id="@+id/toast"
+android:text="gopal"
+android:textsize="20sp"-content
+android:layout_width="match_parent/wrap_content/200dp"
+android:layout_height="m/w/200dp"
+/>
+
+1.give the id for particular view
+
+2.we have to implement the global variable
+object at Activity file
+
+synatx:Button objname;
+
+ex:Button msg;
+
+3.get the id for oncreate method with the help
+of findviewbyid() method
+
+R.java file
+
+msg=findviewbyid(R.id.toast);
+
+4.to implement the onclick listeners correspoding
+view group object.
+
+msg.setonclicklistener(new Onclicklistener)
+{
+
+   @Override
+  public void onclick(View view)
+{
+//write toast
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
