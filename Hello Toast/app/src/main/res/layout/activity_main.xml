@@ -3,12 +3,15 @@
     muni:layout_height="match_parent"
     muni:layout_width="match_parent"
    tools:context=".MainActivity"
+    muni:weightSum="10"
+    muni:layout_margin="10dp"
     xmlns:muni="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
     <Button
         muni:layout_width="match_parent"
-        muni:layout_height="wrap_content"
+        muni:layout_height="0dp"
+        muni:layout_weight="1"
         muni:text="Toast"
         muni:textColor="@android:color/white"
         muni:background="@color/colorPrimary"
@@ -17,7 +20,8 @@
         />
     <TextView
         muni:layout_width="match_parent"
-        muni:layout_height="wrap_content"
+        muni:layout_height="0dp"
+        muni:layout_weight="8"
         muni:id="@+id/tv"
         muni:background="@color/colorYellow"
         muni:text="0"
@@ -27,7 +31,8 @@
         />
     <Button
         muni:layout_width="match_parent"
-        muni:layout_height="wrap_content"
+        muni:layout_height="0dp"
+        muni:layout_weight="1"
         muni:text="count"
         muni:textColor="#fff"
         muni:id="@+id/countBtn"
