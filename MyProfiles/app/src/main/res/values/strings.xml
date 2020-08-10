@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyProfiles</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="about_me">
+    Email : devianusha.n@apssdc.in\n Mobile number 9848733571 \nwebsite Address:www.google.com
+
+    </string>
+</resources>

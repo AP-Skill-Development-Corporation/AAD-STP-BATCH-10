@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:layout_margin="10dp"
+    android:layout_width="100dp"
+
+    android:layout_height="100dp"
+    android:src="@drawable/profile"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textColor="#EC0519"
+        android:text="DeviAnusha Neelapu"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:gravity="end|right"
+        android:text="B.TECH \nM.TECH"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Experience"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textAllCaps="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="I have been  training  the students on android applications from past 5 years."/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Work Experience"
+    android:textAllCaps="true"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Working in apssdc from 5 years"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Area of Expertise"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expert in android application development.And Know html css bootstrap python php javascript"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="@string/personal_info"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:autoLink="all"
+        android:text="@string/about_me"/>
+</LinearLayout>
+</ScrollView>
