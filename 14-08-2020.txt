@@ -1,0 +1,56 @@
+To day Objective:
+----------------
+Lateral Navigation-Tab Navigations
+
+Activity:
+--------
+it is combination of xml file +java file
+
+oncreate()
+
+Button b;
+
+b=findviewbyId(R.id.bid);
+
+Fragment:
+--------
+A fragment is Android jetpack component.
+
+which can be included min api level 11
+
+Honey comb
+
+we have to implement multiple fragments to 
+
+display the single screen or activity.
+
+.fragments are own life cycle
+
+. when we delete an fragment when the app is running
+state.
+
+.fragment is a independent
+
+.when we create an frgment we can implement the
+
+default method.
+
+fragment-oncreateview()--view.findviewbyid(R.id.bid)
+
+Activity-oncreate()--findviewbyid(R.id.bid);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
