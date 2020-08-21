@@ -1,10 +1,12 @@
 package com.muneiah.roomdbwithemployeelog;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,7 +36,9 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeAdapter.Employ
     holder.d.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            MainActivity.database.employeeDAO().delete(list.get(position));
+          //  MainActivity.database.employeeDAO().delete(list.get(position));
+            MainActivity.viewModel.delete(list.get(position));
+            Toast.makeText(ctx, "Deleted", Toast.LENGTH_SHORT).show();
         }
     });
     }
@@ -52,6 +56,17 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeAdapter.Employ
             d=itemView.findViewById(R.id.tv_delete);
             n=itemView.findViewById(R.id.tv_name);
             i=itemView.findViewById(R.id.tv_id);
+            e.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String nn=n.getText().toString();
+                    String ii=i.getText().toString();
+                    Intent intent=new Intent(ctx,UpdateActivity.class);
+                    intent.putExtra("emp_name",nn);
+                    intent.putExtra("emp_id",ii);
+                    ctx.startActivity(intent);
+                }
+            });
         }
     }
 }
