@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dp5"
+    tools:context=".Tenth">
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/style"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_person"
+            android:layout_marginRight="16dp" />
+        <EditText
+
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="  Enter UserName"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/ic_account_circle_black_24dp"
+            android:id="@+id/username"
+            android:maxLines="1"
+            android:textColorHint="#F5F2F2"
+            />
+
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="  Password"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:drawableRight="@drawable/ic_lock_black_24dp"
+            android:id="@+id/pass"
+            android:textColorHint="#F5F2F2"
+            android:maxLines="1"
+            />
+        <EditText
+
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="  Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/ic_baseline_email_24"
+            android:id="@+id/emailr"
+            android:textColorHint="#F5F2F2"
+            android:maxLines="1"
+            />
+
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="  Enter Your Password"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:drawableRight="@drawable/ic_lock_black_24dp"
+            android:id="@+id/password"
+            android:textColorHint="#F5F2F2"
+            android:maxLines="1"
+            />
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:id="@+id/rg"
+            android:src="@drawable/right"
+            android:background="@drawable/button_background"
+            />
+
+       <!-- <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/rname"
+                android:inputType="text"
+                android:layout_marginRight="15dp"
+                android:hint=" Enter your name"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/mail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/rmail"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="15dp"
+                android:hint=" Enter your email address"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/rpass1"
+                android:inputType="textPassword"
+                android:hint=" Enter your password"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/rpass2"
+                android:inputType="textPassword"
+                android:layout_marginRight="15dp"
+                android:hint="Confirm your password"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:id="@+id/l2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Already register ?"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:onClick="Log"
+            android:text="login"
+            android:textStyle="bold"
+            android:textColor="#D81975"
+            android:layout_marginLeft="10dp"></TextView>
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        ></ProgressBar>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bb"
+    tools:context=".Twelth">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration Screen"
+            android:textSize="30sp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+        <EditText
+            android:layout_width="320dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:background="@drawable/styeles"
+            android:hint="Enter UserName"
+            android:id="@+id/name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:layout_width="320dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:background="@drawable/styeles"
+            android:hint="Enter Email Id"
+            android:id="@+id/mail"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Gender"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginRight="110dp"
+            android:background="@drawable/styeles"/>
+        <RadioGroup
+            android:layout_width="320dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:background="@drawable/styeles"
+            android:orientation="horizontal"
+            android:id="@+id/rg"
+            android:layout_marginTop="10dp">
+            <RadioButton
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="male"
+                android:id="@+id/male"
+                android:layout_marginTop="10dp"
+                android:textSize="22sp"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="female"
+                android:id="@+id/female"
+                android:layout_marginTop="10dp"
+                android:textSize="23sp"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:background="@drawable/styeles"
+            android:hint="Enter State"
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="320dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:background="@drawable/styeles"
+            android:hint="Age"
+            android:id="@+id/age"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="320dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:background="@drawable/styeles"
+            android:layout_marginTop="10dp"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:background="@drawable/styeles"
+            android:hint="Address"
+            android:id="@+id/add"
+            android:inputType="text"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="320dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:background="@drawable/styeles"
+            android:hint="Pincode"
+            android:id="@+id/pin"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:id="@+id/rg1"
+            android:src="@drawable/right"
+            android:background="@drawable/button_background"
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
